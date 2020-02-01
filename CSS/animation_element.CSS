@@ -1,0 +1,234 @@
+.element_pos{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.animation_border{
+	left:55%;
+	width:900px;
+	height: 250px;
+	animation:logo_zppm_out 2s 7s both ;	
+}
+@keyframes logo_zppm_out{
+	0%{
+
+	}
+	70%{
+		width:400px;
+		height: 100px;
+		top:20%;
+	}
+	90% {
+		width:900px;
+		height: 250px;
+		top:20%;
+	}
+	100%{
+		width:400px;
+		height: 100px;
+		top:30%;
+	}
+}
+.ball{
+	width: 25px;
+	height:25px;
+	border-radius: 50%;
+	background-color: #FF0000;
+	top:100%;
+}
+.first_ball{
+	position: absolute;
+	transition: all 0.3;
+	animation:moveright_f 2s 0.5s both ease-out,
+	jump_f 2s 2.5s both ease-in;
+}
+
+@keyframes moveright_f{
+	0%{
+     	left:-35%;
+	}
+	100%{
+	 	left:65%;
+	}
+}
+@keyframes jump_f{
+	0%
+	{
+		top:100%;
+	}
+	40%{
+		top:20%;
+	}
+	60%{
+	 	top:100%;
+	 }
+	70%{
+	 	top:55%;
+	 }
+	85%{
+	 	top:100%;
+	}
+	90%{
+	 	top:85%;
+	}
+	100%{
+	 	top:100%;
+	 	width: 10px;
+		height:10px;
+	}
+}
+	
+.logo_one{
+	left:-5%;
+	animation:jump_logo 1s 1.1s both ease-out;
+}
+.logo_two{
+	left:15%;
+	animation:jump_logo 1s 1.5s both ease-out;
+}
+.logo_three{
+	left:35%;
+	animation:jump_logo 1s 1.9s both ease-out;
+}
+.logo_four{
+	left:55%;
+	animation:jump_logo 1s 2.3s both ease-out;
+}
+
+@keyframes jump_logo{
+	0%{
+		top:100%;
+		height: 0px;
+		width: 0px;
+	}
+	50%{
+		top:0%;
+		height: 25px;
+	}
+	90%{
+		top:100%;
+		height: 25px;
+
+	}
+	100%{
+		top:100%;
+		height: 0px;
+	}
+}
+.logo_overflow
+{
+    position: absolute;
+    bottom:0%;
+    left:0%;
+    height: height: 100px;
+    transform: translateX(-50%);
+	overflow: hidden;
+}
+.logo_font{
+	width: 50px;
+	height: 100px;
+	bottom:0%;
+	left:50%;
+	font-size:100px;
+	color:red;
+	transform: translateX(-50%);
+}
+.logo_animation_1{
+	animation:jump_font 1s 2.1s both ease-out;
+}
+.logo_animation_2{
+	animation:jump_font 1s 2.5s both ease-out;
+}
+.logo_animation_3{
+	animation:jump_font 1s 2.9s both ease-out;
+}
+.logo_animation_4{
+	animation:jump_font 1s 3.3s both ease-out;
+}
+@keyframes jump_font{
+	0%{
+		height:0px;
+	}
+	100%{
+		height:100px;
+	}
+}
+.company_Domain_logo
+{
+	top: 100%;
+	left:78%;
+	font-size:35px;
+	font-style: oblique;
+	color:red;
+	animation:company_Domain_logo_rot 2s 4.5s both ease-in;
+}
+@keyframes company_Domain_logo_rot
+{
+	0%
+	{
+		transform:rotateX(990deg) translate(-50%,-90%);
+	}
+	100%
+	{
+		transform:rotateX(0deg)translate(-50%,-90%);
+	}
+}
+
+.btn_border{
+	width: 250px;
+	height: 250px;
+	
+}
+
+.btn{
+	color:#fff;
+	text-decoration: none;
+	border:3px solid #FF3333;
+	font-weight: 600;
+	font-size:35px;
+	padding: 35px 45px;
+	display: inline-block;
+	overflow: hidden;
+	animation:btn_start 0.5s 9.5s both;
+}
+@keyframes btn_start{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.btn:before{
+	content:"";
+	width: 400px;
+	height: 400px;
+	background-color: #0066FF;
+	position: absolute;
+	top:80%;
+	left:50%;
+	transform: translateX(-50%);
+	border-radius: 35%;
+    animation:water_rot 5s infinite linear;
+	transition: all 0.5s;
+}
+@keyframes water_rot{
+	0%{
+		transform:translateX(-50%) rotate(0deg) ;
+	}
+	50%{
+		transform:translateX(-50%) rotate(180deg) ;
+	}
+	100%{
+		transform:translateX(-50%) rotate(360deg) ;
+	}
+}
+.btn:hover{
+	color: #FF5511;
+	border:5px solid #FF5511;
+}
+.btn:hover:before{
+	background-color: #0000CC;
+	top:50%;
+}
+.water_font{	
+	
+}
